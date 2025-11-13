@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Guidance & Counseling Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="School Guidance & Counseling Hub Logo" class="logo-img">
+                    <span class="logo-text">School Guidance & Counseling Hub</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="personal-development.html">Personal Development</a></li>
+                        <li><a href="educational-guidance.html">Educational Guidance</a></li>
+                        <li><a href="career-development.html">Career Development</a></li>
+                        <li><a href="health-wellness.html">Health & Wellness</a></li>
+                        <li><a href="community-citizenship.html">Community & Citizenship</a></li>
+                        <li><a href="family-engagement.html">Family Engagement</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="intro-section">
+            <div class="container">
+                <h2 class="section-title">Welcome to Your Safe Space</h2>
+                <div class="intro-content">
+                    <p>At the School Guidance & Counseling Hub, we believe every student deserves personalized support to reach their full potential. Our mission is to provide comprehensive guidance that addresses academic, personal, and career development needs in a warm, supportive environment.</p>
+                    
+                    <p>We understand that each student's journey is unique. That's why we offer tailored counseling services that respect individual strengths, challenges, and aspirations. Whether you're navigating academic pressures, personal growth, or future planning, we're here to guide you every step of the way.</p>
+                    
+                    <p>Our holistic approach combines proven therapeutic techniques with practical life skills development, ensuring students are not only academically prepared but emotionally resilient and future-ready.</p>
+                </div>
+                <button class="btn-secondary">Discover Our Approach</button>
+            </div>
+        </div>
+
+        <div class="services-preview">
+            <div class="container">
+                <h2 class="section-title">Our Core Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Academic Guidance</h3>
+                        <p>Study skills, course selection, and post-secondary application support to help students excel academically.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Personal/Social Development</h3>
+                        <p>Stress management, conflict resolution, and peer relationship counseling for emotional well-being.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Career Exploration</h3>
+                        <p>Interest inventories, pathway planning, and resume building for future success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="container">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Take the first step towards a brighter, more confident future.</p>
+                <button class="cta-button">Book a Consultation</button>
+            </div>
+        </div>
+
+        <div class="testimonial-section">
+            <div class="container">
+                <div class="testimonial-grid">
+                    <img src="images/testimonial.png" alt="Parent Testimonial" class="testimonial-img">
+                    <img src="images/testimonial2.png" alt="Student Testimonial" class="testimonial-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            
+            <div class="services-tabs">
+                <button class="tab-button active" data-tab="academic">Academic Guidance</button>
+                <button class="tab-button" data-tab="personal">Personal/Social Counseling</button>
+                <button class="tab-button" data-tab="career">Career Exploration</button>
+            </div>
+
+            <div class="tab-content active" id="academic">
+                <div class="service-detail">
+                    <h3>Academic Guidance</h3>
+                    <p class="service-description">Comprehensive academic support to help students excel in their educational journey.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-group">
+                            <h4>Study Skills & Strategies</h4>
+                            <ul>
+                                <li>Time management and organization</li>
+                                <li>Note-taking techniques</li>
+                                <li>Test preparation strategies</li>
+                                <li>Memory enhancement methods</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-group">
+                            <h4>Course Selection</h4>
+                            <ul>
+                                <li>Academic pathway planning</li>
+                                <li>Prerequisite mapping</li>
+                                <li>Interest-based course recommendations</li>
+                                <li>Graduation requirement planning</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-group">
+                            <h4>Post-Secondary Applications</h4>
+                            <ul>
+                                <li>College application guidance</li>
+                                <li>Personal statement editing</li>
+                                <li>Scholarship search assistance</li>
+                                <li>Interview preparation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-outcomes">
+                        <h4>Expected Outcomes:</h4>
+                        <ul>
+                            <li>Improved academic performance and confidence</li>
+                            <li>Better study habits and time management</li>
+                            <li>Clear academic and career pathways</li>
+                            <li>Successful college admission results</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="personal">
+                <div class="service-detail">
+                    <h3>Personal/Social Counseling</h3>
+                    <p class="service-description">Emotional and social support to help students develop resilience and healthy relationships.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-group">
+                            <h4>Stress Management</h4>
+                            <ul>
+                                <li>Anxiety and stress reduction techniques</li>
+                                <li>Mindfulness and relaxation exercises</li>
+                                <li>Work-life balance strategies</li>
+                                <li>Coping mechanism development</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-group">
+                            <h4>Conflict Resolution</h4>
+                            <ul>
+                                <li>Communication skills training</li>
+                                <li>Mediation and problem-solving</li>
+                                <li>Boundary setting techniques</li>
+                                <li>Relationship repair strategies</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-group">
+                            <h4>Peer Relations</h4>
+                            <ul>
+                                <li>Social skills development</li>
+                                <li>Friendship building strategies</li>
+                                <li>Bullying prevention and response</li>
+                                <li>Group dynamics support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-outcomes">
+                        <h4>Expected Outcomes:</h4>
+                        <ul>
+                            <li>Reduced stress and anxiety levels</li>
+                            <li>Improved emotional regulation</li>
+                            <li>Better interpersonal relationships</li>
+                            <li>Enhanced self-confidence and resilience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="career">
+                <div class="service-detail">
+                    <h3>Career Exploration</h3>
+                    <p class="service-description">Future planning support to help students discover and prepare for their ideal career path.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-group">
+                            <h4>Interest Inventories</h4>
+                            <ul>
+                                <li>Holland Code assessments</li>
+                                <li>Strength-based evaluations</li>
+                                <li>Values clarification exercises</li>
+                                <li>Skills assessment tools</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-group">
+                            <h4>Pathway Planning</h4>
+                            <ul>
+                                <li>Career exploration activities</li>
+                                <li>Industry research guidance</li>
+                                <li>Educational pathway mapping</li>
+                                <li>Goal setting and action planning</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-group">
+                            <h4>Resume Building</h4>
+                            <ul>
+                                <li>Resume writing workshops</li>
+                                <li>Cover letter development</li>
+                                <li>Interview skills training</li>
+                                <li>LinkedIn profile optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-outcomes">
+                        <h4>Expected Outcomes:</h4>
+                        <ul>
+                            <li>Clear career direction and goals</li>
+                            <li>Enhanced self-awareness and confidence</li>
+                            <li>Professional development skills</li>
+                            <li>Successful job/internship placement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-format">
+                <h3>How We Deliver Our Services</h3>
+                <div class="format-grid">
+                    <div class="format-card">
+                        <h4>One-on-One Sessions</h4>
+                        <p>Personalized 50-minute sessions tailored to individual needs and goals.</p>
+                    </div>
+                    <div class="format-card">
+                        <h4>Small Groups</h4>
+                        <p>Collaborative 90-minute sessions with 4-6 students sharing similar challenges.</p>
+                    </div>
+                    <div class="format-card">
+                        <h4>Workshops</h4>
+                        <p>Interactive 2-hour group sessions focusing on specific skills and topics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 School Guidance & Counseling Hub. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><img src="icons/facebook.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#" aria-label="Twitter"><img src="icons/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
