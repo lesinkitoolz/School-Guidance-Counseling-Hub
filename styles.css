@@ -14,6 +14,11 @@
     --medium-gray: #6c757d;
     --dark-gray: #495057;
     --border-color: #dee2e6;
+    --gray: #6c757d;
+    --soft-pink: #fdf2f2;
+    --soft-blue: #f0f8ff;
+    --dark-blue: #1e3a8a;
+    --primary-blue: #2563eb;
 }
 
 body {
@@ -122,8 +127,8 @@ p {
 /* Navigation */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     padding: 1rem 0;
     position: fixed;
     top: 0;
