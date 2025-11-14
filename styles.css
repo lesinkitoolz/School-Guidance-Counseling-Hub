@@ -346,6 +346,12 @@ p {
     margin-top: 2rem;
 }
 
+.service-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .service-card {
     background-color: var(--white);
     padding: 2rem;
