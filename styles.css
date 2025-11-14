@@ -147,7 +147,7 @@ p {
     color: inherit;
 }
 
-.nav-logo {
+.nav-logo, header.nav-logo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -190,8 +190,14 @@ p {
     transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.dropdown-toggle:hover::after {
     width: 100%;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    position: relative;
 }
 
 /* Dropdown Styles */
