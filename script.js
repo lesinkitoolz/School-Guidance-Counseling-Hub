@@ -63,23 +63,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth Scrolling for Navigation Links
+    // Smooth Scrolling for Navigation Links (only for anchor links)
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                const headerOffset = 80;
-                const elementPosition = targetSection.offsetTop;
-                const offsetPosition = elementPosition - headerOffset;
+            const targetHref = this.getAttribute('href');
 
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+            // Only prevent default and do smooth scrolling for anchor links (#...)
+            if (targetHref && targetHref.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetHref);
+
+                if (targetSection) {
+                    const headerOffset = 80;
+                    const elementPosition = targetSection.offsetTop;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             }
+            // For regular page navigation links (like about.html, contact.html), let them work normally
         });
     });
 
